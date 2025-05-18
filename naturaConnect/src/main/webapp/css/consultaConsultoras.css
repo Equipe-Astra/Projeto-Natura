@@ -1,0 +1,437 @@
+
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange);/* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+header {
+    width: 100%; 
+}
+
+.perfil-icon {
+    display: block;
+}
+
+.perfil {
+    display: none;
+}
+
+.container-consulta {
+    flex-direction: row !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.logoHeader {
+    width: 8rem;
+    margin-left: 1rem !important;
+}
+
+.font-nav {
+    font-size: 1.1rem !important;
+}
+
+.perfil-icon {
+    font-size: 1.6rem !important;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange);
+}
+
+.color-light {
+    background-color: var(--color-light);
+}
+
+.onda {
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    position: relative;
+    margin-top: -9rem;
+}
+
+.navbar-collapse {
+    padding: 1rem 1rem;
+    z-index: 1;
+     flex-grow: 0 !important;
+}
+
+.img-consulta {
+    width: 27rem;
+}
+
+.title-3 {
+    margin-top: 1.5rem;
+}
+
+.consulta {
+    height: 32rem; 
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; 
+    overflow-y: visible; 
+    overflow-x: hidden;
+}
+
+.consulta::-webkit-scrollbar {
+    width: 0.4rem; /* Largura da barra de rolagem */
+}
+
+.consulta::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange);/* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+.consulta::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+.foto {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.box {
+    width: 21rem;
+    height: 8rem;
+    border-color: var(--color-orange);
+    border-width: 0.35rem !important;
+    border-style: solid;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.fone, .local {
+    font-size: 0.75rem;
+    margin-left: 0.2rem;
+}
+
+.solicit {
+    width: 12rem !important;
+    font-size: 0.9rem !important;
+}
+
+.nometag {
+    font-size: 0.7rem;
+}
+
+.tag {
+    background-color: #FEE8E9;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.form-check-input {
+    width: 2rem!important;
+    height: 2rem !important;
+    border-radius: 5rem !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-orange) !important;
+    border: none !important;
+}
+.form-check-input:checked[type=checkbox] {
+    --bs-form-check-bg-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e);
+}
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .onda {
+        margin-top: 0rem;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+
+    .container-consulta {
+        flex-direction: column !important;
+    }
+
+    .div-consulta {
+        margin-top: 0;
+    }
+
+    .img-consulta {
+        width: 19rem !important;
+    }
+
+    .title-1 {
+        font-size: 1.18rem !important;
+        margin-top: 1.5rem;
+        
+    }
+
+    .title-2 {
+        font-size: 1.18rem !important;
+    }
+
+    .title-3 {
+        font-size: 0.8rem !important;
+        margin-left: 1.5rem; 
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .nome {
+        font-size: 0.9rem;
+    }
+
+    .title-4 {
+        font-size: 0.8rem !important;
+    }
+
+    .box {
+        width: 17rem;
+        height: 6.8rem;
+    }
+
+    .form-check-input {
+        width: 1.5rem!important;
+        height: 1.5rem !important;
+        border-radius: 5rem !important;
+    }
+
+    .foto {
+        width: 3.5rem;
+        margin-right: 0rem;
+    }
+
+    .fone, .local {
+        font-size: 0.6rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .onda {
+        margin-top: -3.7rem;
+    }
+
+    .container-consulta {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        display: block;
+    }
+    
+    .perfil {
+        display: none;
+    }
+
+    .img-consulta {
+        width: 21rem !important;
+    }
+
+    .title-1 {
+        font-size: 1.35rem !important;
+        margin-top: 1.5rem;
+        
+    }
+
+    .title-2 {
+        font-size: 1.35rem !important;
+    }
+
+    .title-3 {
+        font-size: 1rem !important;
+        margin-left: 1.5rem; 
+        margin-right: 1.5rem;
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+
+    .title-4 {
+        font-size: 1rem !important;
+    }
+
+    .box {
+        width: 17rem;
+        height: 7rem;
+    }
+
+    .form-check-input {
+        width: 2rem!important;
+        height: 2rem !important;
+        border-radius: 5rem !important;
+    }
+
+    .foto {
+        width: 4rem;
+        margin-right: 0rem;
+    }
+
+    .fone, .local {
+        font-size: 0.6rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    .onda {
+        margin-top: -4.6rem;
+    }
+
+    .img-consulta {
+        width: 21rem !important;
+    }
+
+    .title-1 {
+        font-size: 1.35rem !important;
+        margin-top: 1.5rem;
+        
+    }
+
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .title-2 {
+        font-size: 1.35rem !important;
+    }
+
+    .title-3 {
+        font-size: 1rem !important;
+        margin-left: 1.5rem; 
+        margin-right: 1.5rem;
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+
+    .title-4 {
+        font-size: 1rem !important;
+    }
+
+    .box {
+        width: 17rem;
+        height: 7rem;
+    }
+
+    .form-check-input {
+        width: 2rem!important;
+        height: 2rem !important;
+        border-radius: 5rem !important;
+    }
+
+    .foto {
+        width: 4rem;
+        margin-right: 0rem;
+    }
+
+    .fone, .local {
+        font-size: 0.6rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .onda {
+        margin-top: -5rem;
+    }
+    
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+}
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .onda {
+        margin-top: -6rem;
+    }
+    
+}
+
+@media (min-width: 1401px) and (max-width: 1500px){
+    .onda {
+        margin-top: -7rem;
+    }
+}

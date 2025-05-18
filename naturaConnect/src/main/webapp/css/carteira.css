@@ -1,0 +1,634 @@
+
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange);/* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange) !important;
+}
+
+.color-light {
+    background-color: var(--color-light);
+}
+
+.text-green {
+    color: #05705D;
+}
+
+.logoHeader {
+    width: 8rem;
+    margin-left: 1rem !important;
+}
+
+.font-nav {
+    font-size: 1.1rem !important;
+}
+
+.perfil-icon {
+    font-size: 1.6rem !important;
+}
+
+.text-red {
+    color: #DE2B2B;
+}
+
+header {
+    width: 100%; 
+    height: 10%;
+}
+
+.perfil-icon {
+    display: block;
+}
+
+.perfil {
+    display: none;
+}
+
+.dropdown-check {
+    display: none !important;
+}
+
+.background-nav {
+    background-color: var(--color-light);
+}
+
+#filtrar, #limpar {
+	font-size: 1rem;
+}
+
+.onda {
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    position: relative;
+    margin-top: -9rem;
+}
+
+.desde, .ultima {
+    font-size: 0.93rem !important;
+}
+
+.checkBox {
+    display: flex !important;
+    margin-top: 1.5rem;
+}
+
+.container-title {
+    position: absolute;
+    margin-top: -14rem;
+    padding: 3rem;
+}
+
+.swiper {
+      width: 85%;
+      height: 100%;
+    }
+
+.swiper-slide {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+
+.enderecotam {
+	font-size: 0.85rem;
+}
+
+.fonetam {
+	font-size: 0.85rem;
+}
+
+.card-carousel {
+    margin: 2rem auto;
+    width: 30rem;
+    height: 22rem;
+    border-top: 6px solid #F5821F;
+    border-radius: 0.7rem;
+    flex: 1 0 25%; /* 4 cards por linha */
+}
+
+.carousel-img {
+    border-radius: 0.7rem;
+}
+
+.foto {
+    width: 6rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-orange) !important;
+    border-color: var(--color-orange) !important;
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+    
+
+    .onda {
+        margin-top: -1.8rem;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .container-title {
+        margin-top: -5.5rem;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        padding-top: 0;
+        padding-bottom: 2rem !important;
+    }
+
+    .form-check {
+        flex-wrap: wrap;
+    }
+
+    .checkBox {
+        display: none !important;
+    }
+
+    .dropdown-check {
+        display: inline !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+
+    .card-carousel {
+        width: 17rem;
+        height: 21rem;
+    }
+
+    .desde, .ultima {
+        font-size: 0.7rem !important;
+    }
+    
+    #carteira {
+        margin-top: 8rem;
+    }
+
+    .swiper-wrapper{
+        margin-top: 1.5rem !important;
+    }
+    
+    .swiper {
+    	width: 98% !important;
+    	padding-left: 1.35rem !important;
+	    padding-right: 1.35rem !important;
+	    padding-top: 0rem !important;
+	    padding-bottom: 0rem !important;
+    }
+    
+    .swiper-button-next {
+		margin-right: 0rem !important;
+		
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+		
+	}
+	
+	footer {
+	    position: fixed;
+	    bottom: 0;
+	    width: 100vw;
+	}
+		
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .onda {
+        margin-top: -1.8rem;
+    }
+
+    .container-title {
+        margin-top: -5.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+
+    .title { 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .filtro {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child{
+        display: block;
+    }
+
+    .card-carousel {
+        width: 17rem;
+        height: 21rem;
+    }
+
+    .desde, .ultima {
+        font-size: 0.8rem !important;
+    }
+
+    #carteira {
+        margin-top: 8rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 18% !important; /* Ajuste o tamanho conforme necessário */
+    }
+
+    .form-check {
+        flex-wrap: wrap;
+    }
+
+    .checkBox {
+        display: none !important;
+    }
+
+    .dropdown-check {
+        display: inline !important;
+    } 
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+    
+    .swiper-wrapper{
+        margin-top: 1rem !important;
+    }
+    
+    .swiper {
+    	width: 92% !important;
+    	padding-left: 1.35rem !important;
+	    padding-right: 1.35rem !important;
+	    padding-top: 0rem !important;
+	    padding-bottom: 0rem !important;
+    }
+    
+    .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+	
+	footer {
+	    position: fixed;
+	    bottom: 0;
+	    width: 100vw;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .onda {
+        margin-top: -4rem;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+    }
+
+    .container-title {
+        margin-top: -10rem !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    	width: 30rem;
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .card-carousel {
+        width: 17rem;
+        height: 21rem;
+    }
+
+    .desde, .ultima {
+        font-size: 0.8rem !important;
+    }
+
+    #carteira {
+        margin-top: 8rem;
+    }
+
+    .dropdown-check {
+        display: none !important;
+    } 
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+    
+    .swiper {
+    	width: 95% !important;
+    	padding-left: 1.35rem !important;
+	    padding-right: 1.35rem !important;
+	    padding-top: 0rem !important;
+	    padding-bottom: 0rem !important;
+    }
+    
+    .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+	
+	.form-check-lable {
+		font-size: 0.9rem !important;
+	}
+	
+	footer {
+	    position: fixed;
+	    bottom: 0;
+	    width: 100vw;
+	}
+		
+	
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .onda {
+        margin-top: -5rem;
+    }
+
+    .container-title {
+        margin-top: -10rem !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .card-carousel {
+        width: 17rem;
+        height: 21rem;
+    }
+
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.6rem !important;
+    }
+
+
+    .desde, .ultima {
+        font-size: 0.8rem !important;
+    }
+
+
+    #carteira  {
+        margin-top: 6rem;
+    }
+
+    .form-check {
+        flex-wrap: wrap;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+    
+    .swiper {
+    	width: 97% !important;
+    	padding-left: 1.35rem !important;
+	    padding-right: 1.35rem !important;
+	    padding-top: 0rem !important;
+	    padding-bottom: 0rem !important;
+    }
+    
+    .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+}
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .onda {
+        margin-top: -6rem;
+    }
+
+    .container-title {
+        margin-top: -6rem !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.5rem !important;
+    }
+
+    .card-carousel {
+        width: 17rem;
+        height: 21.5rem;
+    }
+
+    .desde, .ultima {
+        font-size: 0.8rem !important;
+    }
+
+
+	.swiper-wrapper{
+        margin-top: 3rem !important;
+    }
+      
+    .swiper {
+    	width: 95% !important;
+    	padding-left: 1.35rem !important;
+	    padding-right: 1.35rem !important;
+	    padding-top: 0rem !important;
+	    padding-bottom: 0rem !important;
+    }
+    
+    .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+	
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .onda {
+        margin-top: -7rem;
+    }
+
+    .container-title {
+        margin-top: -8rem !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .logoHeader {
+        width: 7rem;
+        margin-left: 0 !important;
+    }
+
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .font-nav {
+        font-size: 1.1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.6rem !important;
+    }
+
+    .card-carousel {
+        width: 18rem;
+        height: 21.5rem;
+    }
+
+    .desde, .ultima {
+        font-size: 0.8rem !important;
+    }
+    
+    .swiper-wrapper{
+        margin-top: 1rem !important;
+    }
+
+    .swiper {
+    	width: 98% !important;
+    	padding-left: 1.35rem !important;
+	    padding-right: 1.35rem !important;
+	    padding-top: 0rem !important;
+	    padding-bottom: 0rem !important;
+    }
+    
+    .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}

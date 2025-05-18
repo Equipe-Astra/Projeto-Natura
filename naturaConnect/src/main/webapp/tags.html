@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura Connect</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tags.css">
+</head>
+<body>
+	<main class="main-section">
+        <!-- Imagem centralizada -->
+        <div class="main-image">
+            <img src="./assets/skincare.svg" alt="Imagem de Maquiagem">
+        </div>
+    
+        <!-- Texto centralizado -->
+        <h2 class="mt-4">VAMOS MONTAR SEU PERFIL?</h2>
+        <h5>Escolha as categorias que você mais se interessa</h5>
+        <!-- Botão de envio -->
+        <button type="button" id="enviar" class="btn mt-4 fw-medium text-light color-orange" onclick="enviarTags()">CONTINUAR</button>
+       
+        <!-- Botões de tags -->
+        <button class="btn btn-cloud btn-custom btn1" onclick="selecionarTag('TERAPEUTICO')">TERAPÊUTICO</button>
+        <button class="btn btn-cloud btn-custom btn2" onclick="selecionarTag('PELE')">PELE</button>
+        <button class="btn btn-cloud btn-custom btn3" onclick="selecionarTag('MAQUIAGEM')">MAQUIAGEM</button>
+        <button class="btn btn-cloud btn-custom btn4" onclick="selecionarTag('NATURA TODODIA')">NATURA TODODIA</button>
+        <button class="btn btn-cloud btn-custom btn5" onclick="selecionarTag('MAMAE E BEBE')">MAMÃE E BEBÊ</button>
+        <button class="btn btn-cloud btn-custom btn6" onclick="selecionarTag('MASCULINO')">MASCULINO</button>
+        <button class="btn btn-cloud btn-custom btn7" onclick="selecionarTag('NATURA EKOS')">NATURA EKOS</button>
+        <button class="btn btn-cloud btn-custom btn8" onclick="selecionarTag('PERFUMES')">PERFUMES</button>
+        <button class="btn btn-cloud btn-custom btn9" onclick="selecionarTag('UNHAS')">UNHAS</button>
+        <button class="btn btn-cloud btn-custom btn10" onclick="selecionarTag('KIDS')">KIDS</button>
+        <button class="btn btn-cloud btn-custom btn11" onclick="selecionarTag('CABELO')">CABELO</button>
+        <button class="btn btn-cloud btn-custom btn12" onclick="selecionarTag('NATURA LUMINA')">NATURA LUMINA</button>
+        <button class="btn btn-cloud btn-custom btn13" onclick="selecionarTag('SKINCARE')">SKINCARE</button>
+        <button class="btn btn-cloud btn-custom btn14" onclick="selecionarTag('FEMININO')">FEMININO</button>
+        
+        <!-- Formulário invisível -->
+        <form id="tagForm" action="/naturaConnect/Tags" method="POST" style="display: none;">
+            <input type="hidden" name="tagsSelecionadas" id="tagsSelecionadas">
+            <input type="hidden" name="usuarioLogado" value="${usuarioLogado}">
+        </form>
+    </main>
+
+    <footer class="shadow-lg pt-2 pb-2 d-flex justify-content-center align-items-center color-light">
+        <p class="fw-regular mb-0">©TECH FIVE <br>2024</p>
+    </footer>
+
+    <!-- Link do Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let tagsSelecionadas = [];
+
+        function selecionarTag(tag) {
+            // Verifica se a tag já foi selecionada
+            if (tagsSelecionadas.includes(tag)) {
+                // Se já estiver selecionada, remove a tag
+                tagsSelecionadas = tagsSelecionadas.filter(t => t !== tag);
+            } else {
+                // Se não estiver, adiciona a tag
+                tagsSelecionadas.push(tag);
+            }
+            console.log(tagsSelecionadas);  // Verifica o array no console para depuração
+        }
+
+        function enviarTags() {
+            // Converte o array de tags selecionadas em uma string e envia ao formulário
+            document.getElementById('tagsSelecionadas').value = tagsSelecionadas.join(',');
+            document.getElementById('tagForm').submit();  // Envia o formulário
+        }
+    </script>
+</body>
+</html>

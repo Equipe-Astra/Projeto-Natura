@@ -1,0 +1,381 @@
+
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-orange) !important;
+    font-family: var(--font-primary) !important;
+}
+
+main {
+    --bs-gutter-x: 0rem !important;
+}
+
+.cadastro {
+    margin-right: 5rem;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.forma {
+    display: none;
+}
+
+header {
+    display: none;
+}
+
+.conteiner-ladoBranco {
+    margin-left: 15rem;
+}
+
+.active, .btn-default {
+    border: none !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+.active {
+    background-color: var(--color-orange) !important;
+    color: var(--color-light) !important;
+}
+
+.btn-default {
+    background-color: #FFF5EC !important;
+}
+
+.cliente, .consultora {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+}
+
+.consultora {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 3px solid #F5821F !important;
+    background-color: #FEFCFB !important;
+}
+
+#num {
+    width: 5rem;
+}
+
+#ruacli {
+    width: 23rem;
+}
+
+#ruacon {
+    width: 15rem;
+}
+
+#cepcon {
+    width: 6.6rem;
+}
+
+#togglePass, #togglePass2 {
+    position: absolute;
+}
+
+#password::placeholder, #email::placeholder, #nome::placeholder, #codigoconsultora::placeholder, #confpassword::placeholder, #tel::placeholder, #nomesocial::placeholder, #cpf::placeholder,
+#ruacli::placeholder, #ruacon::placeholder, #num::placeholder, #cepcli::placeholder, #cepcon::placeholder, #complemento::placeholder, #bairro::placeholder,
+#cidade::placeholder, #estado::placeholder, .bi-eye, .bi-eye-slash {
+    color: #A6A6A6;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.conta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login, .esqueci {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+    border: none !important;
+}
+
+.cadastre {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    font-size: 0.8rem !important;
+    border: none !important;
+}
+
+#cadastrar {
+    background-color: var(--color-orange);
+}
+
+.ladoBranco {
+    background-color: #FEFCFB;
+    width: 70%;
+    height: 100vh;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.ladoLaranja {
+    width: 30%;
+    height: 100vh;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.errorInput {
+    border-bottom: 3px solid rgb(207, 53, 53) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: none !important; /* Se necessário, ajuste a cor da borda */
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+    body {
+        background-color: var(--color-light) !important;
+    }
+
+    .conteiner-ladoBranco {
+        margin-top: 3rem;
+    }
+
+    .forma {
+        display: block;
+    }
+    
+    header {
+        display: block;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+
+    .ladoBranco {
+        width: 100%;
+        margin-top: 40rem;
+    }
+
+    .cadastro, .ladoLaranja, .ladoBranco {
+        display: none;
+    }
+
+    .formCadastro {
+        flex-direction: column;
+        width: 17rem;
+    }
+
+    #ruacli,  #ruacon, #num, #cepcon, #cepcli {
+        width: 15.5rem;
+    }
+
+    .conta {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .conteiner-ladoBranco {
+        margin-left: 0;
+    }
+
+    .esqueci {
+        margin-left: 0.2rem !important;
+        --bs-btn-padding-y: 0 !important;
+        --bs-btn-padding-x: 0 !important;
+    }
+
+    .cadastre, .login, .esqueci {
+        font-size: 0.7rem !important;
+    }
+
+    .ladoBranco {
+        position: absolute;
+        background-color: transparent;
+    }
+
+    .forma {
+        width: 100vw;
+    }
+
+    #entrar{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+    }
+
+    header {
+        display: block;
+        background-image: url(../assets/forma.svg);
+        background-size: cover;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1000px) {
+    body {
+        background-color: var(--color-light) !important;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+
+    .forma {
+        display: block;
+    }
+    
+    header {
+        display: block;
+    }
+
+    .ladoBranco {
+        width: 100%;
+    }
+
+    .cadastro, .ladoLaranja, .ladoBranco {
+        display: none;
+    }
+
+    #ruacon {
+        width: 15rem;
+    }
+    
+    #cepcon {
+        width: 6.6rem;
+    }
+
+    .conta {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .conteiner-ladoBranco {
+        margin-left: 0;
+    }
+
+    .esqueci {
+        margin-left: 0.2rem !important;
+        --bs-btn-padding-y: 0 !important;
+        --bs-btn-padding-x: 0 !important;
+    }
+
+    .cadastre, .login, .esqueci {
+        font-size: 0.7rem !important;
+    }
+
+    .ladoBranco {
+        position: absolute;
+        background-color: transparent;
+    }
+
+    .forma {
+        width: 100vw;
+    }
+
+    .cliente, .consultora {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        font-size: 0.8rem !important;
+    }
+    
+    .consultora {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    #entrar{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+    }
+
+    header {
+        display: block;
+        background-image: url(../assets/forma.svg);
+        background-size: cover;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1090px){
+
+    .ladoBranco {
+        width: 90%;
+    }
+
+    .cadastro {
+        width: 40%;
+        margin-left: 5rem;
+    }
+    
+    .ladoLaranja {
+        width: 40%;
+        height: 100vh;
+    }
+
+    #ruacon {
+        width: 10.7rem  !important;
+    }
+    
+    #cepcon {
+        width: 6.6rem !important;
+    }
+
+    #num {
+        width: 5rem;
+    }
+    
+    #ruacli {
+        width: 18.8rem;
+    }
+
+    .form {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+ 
+}
+
+@media(min-width: 1091px) {
+
+    .ladoBranco {
+        width: 90%;
+    }
+
+    .cadastro {
+        width: 40%;
+        margin-left: 5rem;
+    }
+    
+    .ladoLaranja {
+        width: 40%;
+        height: 100vh;
+    }
+}

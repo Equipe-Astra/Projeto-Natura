@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura Connect</title>
+
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+     <!-- Minha CSS -->
+     <link rel="stylesheet" href="./css/login.css">
+
+     <!-- Chamada da CSS do BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img class="forma" src="./assets/forma.svg" alt="">
+        </figure>
+    </header>
+    <main class="container-fluid">
+        <div class="container-login d-flex justify-content-center align-items-center">
+            <div class="ladoBranco d-flex justify-content-center align-items-center">
+                <div class="conteiner-ladoBranco d-flex justify-content-center align-items-center flex-column">
+                    <figure>
+                        <img class="logo" src="./assets/logo.svg">
+                    </figure>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-default shadow mb-5 mt-4 rounded cliente">CLIENTE</button>
+                        <button class="btn btn-primary shadow mb-5 mt-4 rounded consultora active">CONSULTORA</button>
+                    </div>
+                    <form action="Login" method="post" class="d-flex flex-column justify-content-center align-items-center" id="loginForm" >
+                        <div class="mb-5">
+                            <input type="hidden" id="tipoUsuario" name="tipoUsuario" value="">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-MAIL" autocomplete="off" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-5">
+                            <div class="inputsenha d-flex justify-content-end align-items-center">
+                                <input type="password" name="password" class="form-control" placeholder="SENHA" id="password">
+                                <i class="bi bi-eye me-3" id="togglePass"></i>
+                            </div>
+                            <div class="conta d-flex">
+                                <div class="cadastro d-flex mt-1">
+                                    <div class="ms-1" class="form-text">Não tem uma conta?</div>
+                                    <a type="submit" href="cadastro.html" class="btn d-flex justify-content-center align-items-center cadastre text-orange ms-1">Cadastre-se</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-center align-items-center">
+                            <button type="submit" id="entrar" class="btn pt-2 pb-2 ps-5 pe-5 fw-medium text-light">ENTRAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <figure class="d-flex justify-content-center align-items-center">
+                <img class="login position-absolute figure-img img-fluid" src="./assets/tela-login.svg">
+            </figure>
+            <div class="ladoLaranja"></div>
+        </div>
+    </main>
+    <!-- Chamada JS do BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+ /* Estilizando a seção principal */
+ 
+ :root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange) !important;
+}
+
+.color-light {
+    background-color: var(--color-light) !important;
+}
+
+.text-green {
+    color: #05705D;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+    overflow-x: hidden;
+}
+
+ .main-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Estilizando a imagem */
+.main-image img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Estilizando os botões */
+.btn-custom {
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 10px 20px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+
+.btn-cloud {
+    position: absolute;
+    padding: 0.7rem 3rem;
+    color: #ffffff;
+    border-radius: 10px 10px 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/* Posicionando os botões fora da área da imagem */
+.btn1 { top: 6%; left:10%; }
+.btn2 { top: 10%; right: 55%; }
+.btn3 { top:7%; left: 55%; }
+.btn4 { top: 10%; right: 10%; }
+.btn5 { top: 25%; left: 20%; }
+.btn6 { top: 45%; right: 75%; }
+.btn7 { top: 65%; left: 20%; }
+.btn8 { top: 85%; right: 65%; }
+.btn9 { top: 85%; left: 45%; }
+.btn10 { top: 85%; right: 25%; }
+.btn11 { top: 70%; left: 73%; }
+.btn12 { top: 55%; right: 15%; }
+.btn13 { top:40%; left: 77%; }
+.btn14 { top: 24%; left: 70%; }
+
+/* Ajuste de cores para os botões */
+.btn1 { background-color: #FF808B; }
+.btn2 { background-color: #F5821F; }
+.btn3 { background-color: #05705D; }
+.btn4 { background-color: #F6E58D; color: #343434;}
+.btn5 { background-color: #F6E58D; color: #343434;}
+.btn6 { background-color: #F5821F; }
+.btn7 { background-color: #05705D; }
+.btn8 { background-color: #FF808B; }
+.btn9 { background-color: #F6E58D; color: #343434; }
+.btn10 { background-color: #F5821F; }
+.btn11 { background-color: #F6E58D; color: #343434;}
+.btn12 { background-color: #05705D; }
+.btn13 { background-color: #FF808B; }
+.btn14 { background-color: #F5821F; }
+
+.btn1:hover { background-color: #ff99a1; }
+.btn2:hover { background-color: #ff9a40; }
+.btn3:hover { background-color: #069f7b; }
+.btn4:hover { background-color: #f8e7a1; color: #343434; }
+.btn5:hover { background-color: #f8e7a1; color: #343434; }
+.btn6:hover { background-color: #ff9a40; }
+.btn7:hover { background-color: #069f7b; }
+.btn8:hover { background-color: #ff99a1; }
+.btn9:hover { background-color: #f8e7a1; color: #343434; }
+.btn10:hover { background-color: #ff9a40; }
+.btn11:hover { background-color: #f8e7a1; color: #343434; }
+.btn12:hover { background-color: #069f7b; }
+.btn13:hover { background-color: #ff99a1; }
+.btn14:hover { background-color: #ff9a40; }
+
+/* Estilo do rodapé */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+#enviar {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-left: 2.3rem;
+	padding-right: 2.3rem;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9, .btn10, .btn11, .btn12, .btn13, .btn14 {
+        top: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        display: block;
+        margin: 10px auto;
+    }
+}

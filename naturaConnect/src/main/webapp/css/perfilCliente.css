@@ -1,0 +1,881 @@
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --color-green: #05705D;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+      overflow-y: hidden;
+
+}
+
+.circle {
+    margin-left: -0.5rem;
+    font-size: 0.9rem;
+}
+
+.quant {
+    margin-top: -1.15rem;
+    font-size: 0.6rem;
+    margin-left: 0.25rem;
+}
+
+
+.offcanvas {
+	height: 84%;
+}
+
+.carrinho-icon, .linha-vertical {
+	    display: block !important;
+	}
+	
+	.carrinho {
+	    display: none !important;
+	}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.text-green {
+    color: var(--color-green) !important;
+}
+
+
+.color-orange {
+    background-color: var(--color-orange);
+}
+
+.color-green {
+    background-color: var(--color-green) !important;
+}
+
+.color-light {
+    background-color: var(--color-light);
+}
+
+.sidebar-header {
+	display: none !important;
+}
+
+.nomeCli {
+		display: none;
+	}
+	
+	.perfilCli {
+		display: none;
+	}
+
+
+.sair {
+	margin-left: auto !important;
+}
+
+header {
+    width: 100%; 
+    height: 10%;
+}
+
+.card-body {
+    padding: 0.5rem !important;
+  }
+
+.barra-header {
+    height: 18vh;
+    z-index: -100;
+}
+
+.perfil-icon {
+    display: block;
+}
+
+.logoHeader {
+    width: 8rem;
+    margin-left: 1rem !important;
+}
+
+.font-nav {
+    font-size: 1.1rem !important;
+}
+
+.perfil-icon {
+    font-size: 1.6rem !important;
+}
+
+.dropdown-check {
+    display: none !important;
+}
+
+.background-nav {
+    background-color: var(--color-light);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+max-height: 60vh; /* Ajuste a altura máxima conforme necessário */
+    padding-right: 1rem;
+    overflow-y: auto;
+    position: relative;
+}
+
+.main-content {
+    margin-left: 25%;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box; //* Ajuste a altura conforme necessário *//* Para permitir rolagem vertical se necessário */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    
+}
+
+.linha-vertical {
+    border-left: 1px solid var(--color-orange); /* A cor e espessura da linha */
+    height: 40px; /* Altura da linha *//* Espaço da linha em relação ao conteúdo */
+}
+
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.cards-container::-webkit-scrollbar {
+    width: 0.4rem; /* Largura da barra de rolagem */
+}
+.cards-container::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange);/* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+.cards-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 9rem;
+    margin-left: 5rem !important;
+    padding-bottom: 2rem;
+}
+
+.main-content {
+    margin-left: 25%;
+    padding: 20px;
+    
+}
+
+.foto {
+    width: 8rem !important;
+    margin-bottom: 0.5rem;
+}
+
+
+.perfil {
+    padding: 2.3rem !important;
+    width: 19vw !important;
+}
+
+.nivel {
+    font-size: 0.9rem;
+}
+
+.pontos {
+    font-size: 0.75rem;
+}
+
+.pontuacao {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 5rem;
+}
+
+
+.separacao {
+    color: #464545;
+}
+
+.nome {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.consultora {
+    width: 2.5rem;
+}
+
+.consultoraatual {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+		padding-right: 1.2rem;
+}
+
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none !important;
+}
+
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+    visibility: visible !important;
+}
+
+.nomeconsultora {
+    font-size: 0.8rem;
+}
+
+.navbar-collapse {
+    flex-basis: 0% !important;
+    flex-grow: 0 !important;
+    align-items: center;
+}
+
+
+.btn-container {
+    text-align: center;
+    width: 7rem;
+}
+
+.prod {
+	width: 5rem;
+}
+
+.btn-plus {
+	color: #05705D;
+}
+
+.btn-minus {
+	color: #CF1E2B;
+}
+
+.quantidade-wrapper {
+	 border: 2px solid var(--color-orange);
+	 border-radius: 0.5rem;
+	 margin-left: 0.7rem;
+	 margin-right: 2rem;
+	 padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.linhatotal {
+	
+	border: 0.1px solid var(--color-orange);
+	opacity: 1;
+}
+
+.total {
+	margin-left: 0.7rem;
+}
+
+
+.quantidade-input, .btn-plus, .btn-minus {
+	background-color: transparent;
+	border: none;
+	width: 2rem;
+}
+
+
+.nomeprod {
+	font-size: 0.9rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 425px) { 
+	
+	.sidebar {
+		visibility: hidden !important;
+	}
+	.carrinho-icon, .linha-vertical {
+	    display: none !important;
+	}
+	
+	  .logoHeader {
+    width: 6rem !important;
+     margin-left: 0rem !important; 
+}
+	
+	.carrinho {
+	    display: block !important;
+	}
+	
+	.navbar-collapse {
+    flex-basis: 100% !important;
+    flex-grow: 1;
+    align-items: center;
+}
+
+	.cards-container {
+	    display: grid;
+	    grid-template-columns: repeat(1, 1fr);
+	}
+	
+	.main-content {
+		margin-left: 0% !important;
+	}
+	
+	.sidebar-header {
+		display: flex !important;
+		justify-content: center !important;
+		padding: 1rem;
+	}
+	
+	.sair {
+		margin-left: 0  !important;
+		display: flex !important;
+		justify-content: center !important;
+		
+	}
+	
+	.consultora {
+    width: 2.5rem;
+}
+
+.consultoraatual {
+    margin-top: 1rem;
+     padding-left: 1rem;
+		padding-right: 1rem;
+}
+	
+	.cards-container {
+    max-height: calc(60vh - 7rem); /* Subtraindo a margem da altura máxima */
+}
+	
+	.barra-header {
+		 margin-bottom: 7rem;
+	}
+	
+	.foto {
+		width: 5.5rem !important;
+	}
+	
+	.dropdown-check {
+	    display: flex !important;
+	    margin-top: -1rem;
+	}
+	
+	
+	.nomeCli {
+		display: flex !important;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    padding-bottom: 2rem;
+	    justify-content: center !important;
+	    align-items: center !important;
+	}
+
+	.perfilCli {
+		display: flex !important;
+		padding-top: 1.5rem;
+		margin: 3rem;
+		width: 65vw;
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+	.nome {
+		font-size: 1rem;
+	}
+	
+	.carrinho-icon {
+	    display: block;
+	}
+	
+	.carrinho {
+	    display: none;
+	}
+	
+	
+	.circle {
+    margin-left: -0.5rem;
+    font-size: 0.9rem;
+}
+
+	.quant {
+	    margin-top: -1.15rem;
+	    font-size: 0.6rem;
+	    margin-left: 0.25rem;
+	}
+
+	
+	.nomeconsultora {
+	
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.pontos {
+    	font-size: 0.75rem;
+	}
+	
+	.pontuacao {
+	    width: 2rem;
+	    height: 2rem;
+	    border-radius: 5rem;
+	}
+	
+	
+	.separacao {
+	    color: #464545;
+	}
+	
+}
+
+@media (min-width: 426px) and (max-width: 768px) { 
+	
+	.sidebar {
+		visibility: hidden !important;
+	}
+	
+	.logoHeader {
+    width: 6rem !important;
+     margin-left: 0rem !important; 
+}
+	
+	.carrinho-icon, .linha-vertical {
+	    display: none !important;
+	}
+	
+	.carrinho {
+	    display: block !important;
+	} 
+	
+	.col-md-9 {
+	    flex: 0 0 auto;
+	    width: 100% !important;
+	}	
+	
+	.navbar-collapse {
+    flex-basis: 100% !important;
+    flex-grow: 1;
+    align-items: center;
+}
+	
+	.cards-container {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.main-content {
+		margin-left: 0% !important;
+	}
+	
+	.sidebar-header {
+		display: flex !important;
+		justify-content: center !important;
+		padding: 1rem;
+	}
+	
+	.sair {
+		margin-left: 0  !important;
+		display: flex !important;
+		justify-content: center !important;
+		
+	}
+	
+	.consultora {
+    width: 2.5rem;
+}
+
+.consultoraatual {
+    margin-top: 1rem;
+     padding-left: 1rem;
+		padding-right: 1rem;
+}
+	
+	.cards-container {
+    max-height: calc(60vh - 7rem); /* Subtraindo a margem da altura máxima */
+}
+	
+	.barra-header {
+		 margin-bottom: 7rem;
+	}
+	
+	.foto {
+		width: 5.5rem !important;
+	}
+	
+	.dropdown-check {
+	    display: flex !important;
+	    margin-top: -1rem;
+	}
+	
+	
+	.nomeCli {
+		display: flex !important;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    padding-bottom: 2rem;
+	    justify-content: center !important;
+	    align-items: center !important;
+	}
+
+	.perfilCli {
+	    display: flex !important;
+	    padding-top: 1.5rem;
+	    margin: 3rem;
+	    width: 40vw;
+	    flex-direction: column !important;
+	    justify-content: center !important;
+	    align-items: center !important;
+	}
+	
+	.nome {
+		font-size: 1.2rem;
+	}
+	
+	.nomeconsultora {
+	
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.pontos {
+    	font-size: 0.75rem;
+	}
+	
+	.pontuacao {
+	    width: 2rem;
+	    height: 2rem;
+	    border-radius: 5rem;
+	}
+	
+	
+	.separacao {
+	    color: #464545;
+	}
+	
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) { 
+	
+	.sidebar {
+		visibility: hidden !important;
+	}
+	
+	.logoHeader {
+    width: 7rem !important;
+     margin-left: 0rem !important; 
+}
+	
+	
+	.carrinho-icon, .linha-vertical {
+	    display: none !important;
+	}
+	
+	.carrinho {
+	    display: block !important;
+	} 
+	
+	.col-md-9 {
+	    flex: 0 0 auto;
+	    width: 100% !important;
+	}	
+	
+	.navbar-collapse {
+    flex-basis: 100% !important;
+    flex-grow: 1;
+    align-items: center;
+}
+	
+	.cards-container {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.main-content {
+		margin-left: 0% !important;
+	}
+	
+	.sidebar-header {
+		display: none !important;
+	}
+	
+	
+	.consultora {
+    width: 2.5rem;
+}
+
+.consultoraatual {
+    margin-top: 1rem;
+     padding-left: 1rem;
+		padding-right: 1rem;
+}
+	
+	.cards-container {
+    max-height: calc(60vh - 7rem); /* Subtraindo a margem da altura máxima */
+}
+	
+	.barra-header {
+		 margin-bottom: 7rem;
+	}
+	
+	.foto {
+		width: 5.5rem !important;
+	}
+	
+	.dropdown-check {
+	    display: flex !important;
+	    margin-top: -1rem;
+	}
+	
+	
+	.nomeCli {
+		display: flex !important;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    padding-bottom: 2rem;
+	    justify-content: center !important;
+	    align-items: center !important;
+	}
+
+	.perfilCli {
+	    display: flex !important;
+	    padding-top: 1.5rem;
+	    margin: 3rem;
+	    width: 40vw;
+	    flex-direction: column !important;
+	    justify-content: center !important;
+	    align-items: center !important;
+	}
+	
+	.nome {
+		font-size: 1.2rem;
+	}
+	
+	.nomeconsultora {
+	
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.pontos {
+    	font-size: 0.75rem;
+	}
+	
+	.pontuacao {
+	    width: 2rem;
+	    height: 2rem;
+	    border-radius: 5rem;
+	}
+	
+	
+	.separacao {
+	    color: #464545;
+	}
+	
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) { 
+	
+	.sidebar {
+		display: flex !important;
+	}
+	
+	.cards-container {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.carrinho-icon, .linha-vertical {
+	    display: block !important;
+	}
+	
+	.carrinho {
+	    display: none !important;
+	} 
+	
+	.main-content {
+		margin-left: 0% !important;
+	}
+	
+	.sidebar-header {
+		display: none !important;
+	}
+	
+	
+	.consultora {
+    width: 2.5rem;
+}
+
+.consultoraatual {
+    margin-top: 1rem;
+     padding-left: 1rem;
+		padding-right: 1rem;
+}
+	
+	.foto {
+		width: 5.5rem !important;
+	}
+	
+	.dropdown-check {
+	    display: flex !important;
+	    margin-top: -1rem;
+	}
+	
+	
+	.nomeCli {
+		display: none !important;
+	}
+
+	.perfilCli {
+	    display: none !important;
+	}
+	
+	.nome {
+		font-size: 1.2rem;
+	}
+	
+	.nomeconsultora {
+	
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.pontos {
+    	font-size: 0.75rem;
+	}
+	
+	.pontuacao {
+	    width: 2rem;
+	    height: 2rem;
+	    border-radius: 5rem;
+	}
+	
+	
+	.separacao {
+	    color: #464545;
+	}
+	
+	.perfil {
+	    padding: 2.3rem;
+	    width: 19vw;
+	}
+
+	.sidebar {
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    margin-top: 9rem;
+	    margin-left: 2rem;
+	    padding-bottom: 2rem;
+	}
+	
+	
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){ 
+	
+	.sidebar {
+		display: flex !important;
+	}
+	
+	.cards-container {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.main-content {
+		margin-left: 0% !important;
+	}
+	
+	.sidebar-header {
+		display: none !important;
+	}
+	
+	
+	.consultora {
+    width: 2.5rem;
+}
+
+.consultoraatual {
+    margin-top: 1rem;
+     padding-left: 1rem;
+		padding-right: 1rem;
+}
+	
+	.foto {
+		width: 5.5rem !important;
+	}
+	
+	.dropdown-check {
+	    display: flex !important;
+	    margin-top: -1rem;
+	}
+	
+	
+	.nomeCli {
+		display: none !important;
+	}
+
+	.perfilCli {
+	    display: none !important;
+	}
+	
+	.nome {
+		font-size: 1.2rem;
+	}
+	
+	.nomeconsultora {
+	
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	
+	.pontos {
+    	font-size: 0.75rem;
+	}
+	
+	.pontuacao {
+	    width: 2rem;
+	    height: 2rem;
+	    border-radius: 5rem;
+	}
+	
+	
+	.separacao {
+	    color: #464545;
+	}
+	
+	.perfil {
+	    padding: 2.3rem;
+	    width: 23vw;
+	}
+
+	.sidebar {
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    margin-top: 9rem;
+	    margin-left: 3rem;
+	    padding-bottom: 2rem;
+	}
+	
+	
+}

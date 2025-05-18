@@ -1,0 +1,1266 @@
+/* CORPO */
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+    overflow-x: hidden;
+    color: #464545 !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange);/* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange) !important;
+}
+
+.color-light {
+    background-color: var(--color-light) !important;
+}
+
+.text-green {
+    color: #05705D;
+}
+/* CORPO */
+
+
+
+/* Nav bar */
+.logoHeader {
+    width: 8rem;
+    margin-left: 1rem !important;
+}
+
+.font-nav {
+    font-size: 1.1rem !important;
+}
+
+.perfil-icon {
+    font-size: 1.6rem !important;
+    display: block;
+}
+
+.text-red {
+    color: #DE2B2B;
+}
+
+.background-nav {
+    background-color: var(--color-light);
+}
+
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+.swiper-button-next {
+	margin-right: 3rem;
+}
+
+.swiper-button-prev {
+	margin-left: 3rem;
+}
+
+
+.perfil {
+    display: none;
+}
+/* Fim navbar */
+
+.conteiner-ladoBranco {
+    margin-left: 15rem;
+}
+
+.btn.active, .btn-default {
+    border: none !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+.btn.active {
+    background-color: var(--color-orange) !important;
+    color: var(--color-light) !important;
+}
+
+
+.btn-default {
+    background-color: #FFF5EC !important;
+}
+
+.cliente, .consultora {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+}
+
+.consultora {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+	
+.carousel-title, .cards-title {
+	color: black !important;
+}
+
+.card-body {
+	color: #464545 !important; 
+}
+/* TITULO E BOTOES */
+.swiper {
+      width: 90%;
+      height: 100%;
+      padding: 1rem !important;
+    }
+    
+.nomeCompl, .nomeModal, .nomeModalPed {
+	font-size: 1.1rem;
+}
+
+#myChart {
+	width: 265px !important;
+	height: 265px !important;
+}
+
+.card-carousel {
+    margin: 2rem auto;
+    width: 26rem;
+    height: 10rem;
+    border-top: 4px solid #F5821F;
+    border-left: 4px solid #F5821F;
+    border-radius: 0.7rem;
+}
+
+.carousel-img {
+    border-radius: 0.5rem;
+}
+
+
+
+.modal {
+	--bs-modal-border-width: 0 !important;
+	--bs-modal-header-border-width: 0 !important;
+    --bs-modal-footer-border-width: 0 !important;
+}
+
+.mensagem {
+	text-align: justify;
+}
+
+.nomeModal {
+	margin-bottom: 0.2rem !important;
+}
+
+.modalMens {
+	display: contents;
+}
+
+.bi-whatsapp::before {
+    margin-left: 0.2rem;
+}
+
+
+.modal-content {
+	background-color: var(--color-light)!important;
+	border-top: 4px solid #F5821F !important;
+    border-left: 4px solid #F5821F !important;
+    border-radius: 0.7rem !important;
+    width: 86% !important;
+}
+
+.modal-body {
+	padding-left: var(--bs-modal-padding) !important;
+	padding-right: var(--bs-modal-padding) !important;
+	padding-top: 0 !important;
+}
+
+footer {
+	margin-top: 13rem;
+}
+
+
+/* carrossel */
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 425px) {
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+    
+    .foto {
+		width: 4.5rem !important;
+	}
+
+    .fone, .endereco {
+        font-size: 0.78rem !important;
+    }
+    
+    
+      .cards-title{
+        font-size: 1.8rem;
+        font-weight: bold; 
+        margin-bottom: 1rem;
+        text-align: center !important;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   
+    .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+	    
+
+    .onda {
+        margin-top: -1.8rem;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+        color: var(--color-orange);
+    }
+
+    .perfil-icon {
+        display: none;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .carousel-item {
+            width: 33.333%; /* Para exibir 3 itens por vez */
+            flex: 0 0 auto;
+        }
+
+    .swiper-wrapper .carousel-item>div:first-child {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+    }
+
+    .card-carousel {
+        width: 20rem;
+        height: 11.5rem;
+    }
+
+
+    #carteira .carousel {
+        margin-top: 7rem;
+    }
+    
+    .tituloebotao{
+    	display: flex;
+    	flex-direction: column;
+        justify-content: center !important;
+        margin-left: 1.2rem;
+	    margin-top: 2rem;
+	    margin-right: 1.2rem;
+     
+    }
+    
+    .btn-group {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    }
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-left: 1.35rem !important;
+      padding-right: 1.35rem !important;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+    .container-title {
+        margin-top: -5.5rem;
+    }
+   
+
+    .perfil-icon {
+        display: none;
+    }
+
+    .navbar-collapse {
+        padding: 1rem 1rem;
+        z-index: 1;
+    }
+    
+    .perfil {
+        display: block;
+    }
+
+    .logoHeader {
+        width: 6rem;
+        margin-left: 0 !important;
+    }
+
+    .title { 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .filtro {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .swiper-wrapper .carousel-item>div {
+        display: none;
+    }
+
+    .swiper-wrapper .carousel-item>div:first-child {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 100% !important;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 20% !important;
+    }
+
+    .dropdown-check {
+        display: inline !important;
+    } 
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+    
+    .btn-group {
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .logoHeader {
+        width: 7rem;
+    }
+
+
+
+    .col-md-3 {
+        width: 47% !important;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .dropdown-check {
+        display: none !important;
+    } 
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 3% !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.6rem !important;
+    }
+
+    .swiper-wrapper .carousel-item>div {
+        display: none;
+    }
+
+    .swiper-wrapper .carousel-item>div:nth-child(1),
+    .swiper-wrapper .carousel-item>div:nth-child(2) {
+        display: block;
+    }
+
+    .swiper-wrapper .carteira-item2>div {
+        display: none;
+    }
+
+    .swiper-wrapper .carteira-item2>div:nth-child(1),
+    .swiper-wrapper .carteira-item2>div:nth-child(2) {
+        display: block;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .col-md-3 {
+        width: 37% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 22% !important;
+    }
+
+    .form-check {
+        flex-wrap: wrap;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+
+    .tituloebotao {
+        padding-right: 10rem;
+        padding-top: 2.5rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .font-nav {
+        font-size: 1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.5rem !important;
+    }
+
+    .card-carousel {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .swiper-wrapper .carousel-item>div:nth-child(1),
+    .swiper-wrapper .carousel-item>div:nth-child(2),
+    .swiper-wrapper .carousel-item>div:nth-child(3) {
+        display: block;
+    }
+
+    .swiper-wrapper .carteira-item2>div:nth-child(1),
+    .swiper-wrapper .carteira-item2>div:nth-child(2),
+    .swiper-wrapper .carteira-item2>div:nth-child(3) {
+        display: block;
+    }
+
+    .col-md-3 {
+        width: 30% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 8% !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .logoHeader {
+        width: 7rem;
+    }
+
+    .swiper-wrapper .carousel-item>div:nth-child(1),
+    .swiper-wrapper .carousel-item>div:nth-child(2),
+    .swiper-wrapper .carousel-item>div:nth-child(3) {
+        display: block;
+    }
+
+    .swiper-wrapper .carteira-item2>div:nth-child(1),
+    .swiper-wrapper .carteira-item2>div:nth-child(2),
+    .swiper-wrapper .carteira-item2>div:nth-child(3) {
+        display: block;
+    }
+
+    .font-nav {
+        font-size: 1.1rem !important;
+    }
+
+    .perfil-icon {
+        font-size: 1.6rem !important;
+    }
+
+    .card-carousel {
+        width: 25rem;
+        height: 10.5rem;
+    }
+
+    .carousel-item{
+        gap: 5rem;
+    }
+
+    .col-md-3 {
+        width: 25% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width:9% !important;
+    }
+
+    .dropdown-menu.show {
+        padding: 1.5rem;
+        border: none;
+    }
+}
+
+
+/* Dispositivos pequenos (celulares em modo retrato) */
+@media (max-width: 424px) {
+    .tituloebotao {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos pequenos (celulares em modo paisagem) */
+@media (min-width: 425px) and (max-width: 767px) {
+    .tituloebotao {
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        font-size: 1.1rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos médios (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .tituloebotao {
+        padding-left: 4rem;
+        padding-top: 3rem;
+        font-size: 1.2rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+    
+    .swiper {
+      width: 97%;
+      height: 100%;
+      padding-left: 1.35rem !important;
+      padding-right: 1.35rem !important;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+    }
+    
+      .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	.foto {
+        width: 4.5rem !important;
+        margin-right: 0.5rem !important;
+    }
+
+    .fone, .endereco {
+    font-size: 0.8rem !important;
+}
+
+.swiper-button-prev {
+	margin-left: 0rem !important;
+}
+}
+
+/* Dispositivos grandes (tablets grandes ou laptops pequenos) */
+@media (min-width: 993px) and (max-width: 1200px) {
+     .tituloebotao {
+        padding-left: 3rem;
+        padding-top: 3rem;
+        font-size: 1.2rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+    
+    .swiper {
+      width: 97%;
+      height: 100%;
+      padding-left: 1.35rem !important;
+      padding-right: 1.35rem !important;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+    }
+    
+      .swiper-button-next {
+		margin-right: 0rem !important;
+	}
+
+	
+	.foto {
+        width: 4rem !important;
+        margin-right: 0.5rem !important;
+    }
+
+    .fone, .endereco {
+    font-size: 0.8rem !important;
+}
+
+.swiper-button-prev {
+	margin-left: 0rem !important;
+}
+}
+
+/* Dispositivos extra grandes (laptops e desktops) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .tituloebotao {
+        padding-left: 6rem;
+        padding-top: 3rem;
+        font-size: 1.4rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+/* Dispositivos muito grandes (desktops grandes) */
+@media (min-width: 1401px) {
+    .tituloebotao {
+        padding-left: 7rem;
+        padding-top: 3.5rem;
+        font-size: 1.5rem;
+        text-align: left; /* Alinha o conteúdo à esquerda */
+        justify-content: flex-start; /* Garante o alinhamento à esquerda */
+    }
+}
+
+@media (min-width: 1600px) {
+    .tituloebotao {
+        padding-left: 15rem;
+        padding-top: 3.5rem;
+        font-size: 1.5rem;
+        text-align: left; 
+        justify-content: flex-start;
+    }
+}
+
+/* css parte 2 */
+
+:root {
+    --color-light: #FEFCFB;
+    --color-orange: #F5821F;
+    --font-primary: "Rubik", sans-serif;
+}
+
+body {
+    background-color: var(--color-light) !important;
+    font-family: var(--font-primary) !important;
+}
+
+.container-consulta {
+    flex-direction: row !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+.text-light {
+    color: var(--color-light) !important;
+}
+
+.color-orange {
+    background-color: var(--color-orange);
+}
+
+.color-light {
+    background-color: var(--color-light);
+}
+
+.img-consulta {
+    width: 27rem;
+}
+
+.consulta {
+    height: 39rem; 
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; 
+    overflow-y: visible; 
+    overflow-x: hidden;
+}
+
+.consulta::-webkit-scrollbar {
+    width: 0.35rem; /* Largura da barra de rolagem */
+}
+
+.consulta::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange); /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredondar a barra de rolagem */
+}
+
+.consulta::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+    border-radius: 10px; /* Arredondar a trilha da barra de rolagem */
+}
+
+.foto {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.box {
+    width: 22rem;
+    height: 8rem;
+    border-top: 4px solid #F5821F;
+    border-left: 4px solid #F5821F;
+    border-radius: 0.7rem !important;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.fone, .endereco {
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+}
+
+.nometag {
+    font-size: 0.7rem;
+}
+
+.tag {
+    background-color: #FEE8E9;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.corpo {
+    padding-top: 3rem !important;
+}
+
+/* Título acima dos cartões */
+.cards-title {
+    margin-bottom: 1rem;
+    text-align: left; /* Força o alinhamento à esquerda */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+}
+
+/* Título acima dos cartões */
+.title {
+    text-align: left !important; /* Força o alinhamento à esquerda */
+
+}
+
+.div-consulta {
+    text-align: left; 
+    margin-left: 3rem;/* Garante que o texto dentro da div também esteja alinhado à esquerda */
+}
+
+/* Container principal que mantém os cartões */
+.card-container {
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    height: 28rem;
+    gap: 1rem;
+}
+
+/* Cartões do lado esquerdo */
+.left-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 40rem; 
+    border-radius: 10px;
+}
+
+/* Cartão do lado direito */
+.right-card {
+    width: 50%; 
+    display: flex;
+    align-items: stretch;
+    border-radius: 10px;
+    height: 38rem;
+}
+
+/* Cartões verticais à esquerda */
+.vertical-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-width: 7px;
+    border-top: 7px solid var(--color-orange) !important;
+    border-radius: 10px;
+}
+
+/* Cartão horizontal à direita */
+.horizontal-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 7px solid var(--color-orange) !important; 
+}
+
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-task {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 2rem;
+}
+
+#add-task {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: 1;
+}
+
+#add-task:hover {
+    background-color: var(--color-orange);
+}
+
+/* Adiciona um limite de altura e rolagem vertical à lista de tarefas */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+  
+    overflow-y: auto; 
+}
+
+/* Estilo para a barra de rolagem */
+.todo-list::-webkit-scrollbar {
+    width: 0.35rem; /* Largura da barra de rolagem */
+}
+
+/* Estilo para o "polegar" da barra de rolagem */
+.todo-list::-webkit-scrollbar-thumb {
+    background-color: var(--color-orange); /* Cor da barra de rolagem */
+    border-radius: 10px; /* Arredonda o "polegar" da barra de rolagem */
+}
+
+/* Estilo para a trilha da barra de rolagem */
+.todo-list::-webkit-scrollbar-track {
+    background: transparent; /* Torna o fundo da trilha invisível */
+    border-radius: 10px; /* Arredonda a trilha da barra de rolagem */
+}
+
+/* Estilo para os itens da lista */
+.todo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Espaçamento entre as tarefas */
+    position: relative; /* Para posicionar o círculo ao lado */
+    padding-left: 1rem; /* Espaço para o círculo */
+    word-wrap: break-word; /* Quebra de linha para palavras longas */
+    overflow-wrap: break-word; /* Quebra de linha para palavras longas (alternativa) */
+}
+
+/* Estilo para o texto dentro do item da lista */
+.todo-list li span {
+    display: block; /* Faz com que o texto dentro de span quebre em múltiplas linhas */
+}
+
+/* Estilo para o contêiner de entrada e rótulo */
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+/* Adiciona um limite de largura e quebra de linha aos itens da lista */
+.todo-list li {
+    max-width: 100%; /* Garante que o item da lista não exceda a largura do contêiner */
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda o tamanho do item */
+}
+
+/* Estilo para o checkbox e o rótulo */
+.todo-list input[type="checkbox"] + .custom-checkbox {
+    margin-right: 0.5rem; /* Espaçamento entre o círculo e o texto */
+}
+
+
+/* Estilo para o círculo (substituindo a caixa de seleção) */
+.todo-list input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    opacity: 0; /* Oculta o checkbox padrão */
+    width: 1rem; /* Largura do círculo */
+    height: 1rem; /* Altura do círculo */
+    z-index: 1; /* Garante que o checkbox seja clicável */
+}
+
+/* Estilo para o círculo */
+.todo-list input[type="checkbox"] + .custom-checkbox {
+    position: absolute;
+    left: 0;
+    width: 1rem; /* Largura do círculo */
+    height: 1rem; /* Altura do círculo */
+    border-radius: 50%; /* Faz o círculo */
+    border: 2px solid #ccc; /* Borda do círculo */
+    background-color: var(--color-light); /* Cor de fundo do círculo */
+    cursor: pointer; /* Aponta que é clicável */
+    display: flex; /* Flexbox para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
+    z-index: 0; /* Garante que o círculo fique atrás do checkbox */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo para o círculo quando o checkbox está marcado */
+.todo-list input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: var(--color-orange); /* Cor do círculo quando marcado */
+    border-color: var(--color-orange); /* Atualiza a borda para corresponder ao fundo */
+}
+
+/* Adiciona o ícone de check quando o checkbox está marcado */
+.todo-list input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '\f00c'; /* Código Unicode do ícone de check do Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Fonte do Font Awesome */
+    font-weight: 900; /* Peso da fonte para ícones sólidos */
+    color: var(--color-light); /* Cor do ícone */
+    font-size: 1rem; /* Tamanho do ícone */
+}
+
+/* Estilo para as tarefas riscadas quando o checkbox é marcado */
+.todo-list input[type="checkbox"]:checked + .custom-checkbox + label {
+    text-decoration: line-through; /* Adiciona o risco ao texto */
+    color: #888; /* Opcional: muda a cor do texto para cinza quando marcado */
+}
+
+/* Estilo para o botão de remover tarefa */
+.remove-task {
+    background: none;
+    border: none;
+    color: #d9534f;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s;
+}
+
+.remove-task:hover {
+    color: #c9302c;
+}
+/* css parte 2 */
+
+/* Media query 2 */
+
+@media (min-width: 375px) and (max-width: 1190px) {
+     /* Define a altura máxima da lista de tarefas e adiciona rolagem quando necessário */
+     .todo-list {
+        max-height: calc(1.5rem * 5 + 0.5rem * 4); /* Calcula altura máxima para 5 itens, incluindo espaçamento entre itens */
+        overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    }
+    
+
+    /* Estilo da barra de rolagem para o card da lista */
+    .vertical-card::-webkit-scrollbar {
+        width: 0.35rem; /* Largura da barra de rolagem */
+    }
+
+    .vertical-card::-webkit-scrollbar-thumb {
+        background-color: var(--color-orange); /* Cor da barra de rolagem */
+        border-radius: 10px; /* Arredonda o "polegar" da barra de rolagem */
+    }
+
+    .vertical-card::-webkit-scrollbar-track {
+        background: transparent; /* Torna o fundo da trilha invisível */
+        border-radius: 10px; /* Arredonda a trilha da barra de rolagem */
+    }
+
+    .right-card {
+        width: 80%; /* Garante que o cartão horizontal ocupe toda a largura disponível */
+        height: 20rem; /* Altura fixa para o cartão direito */
+        flex: none; /* Impede que o cartão horizontal se estique ou encolha */
+    }
+
+    .vertical-card {
+        height: 50rem; /* Define uma altura fixa para o cartão vertical */
+        overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a altura do card */
+    }
+
+    .todo-list {
+        max-height: calc(1.5rem * 5 + 0.5rem * 4); /* Calcula altura máxima para 5 itens */
+        overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    }
+    
+    .container-consulta {
+        flex-direction: column !important;
+    }
+
+    .div-consulta {
+        margin-top: 37rem;
+        margin-left: 0rem !important;
+    }
+
+    .img-consulta {
+        width: 19rem !important;
+    }
+
+    footer {
+	    margin-top: 0rem !important;
+	}
+
+    .nome {
+        font-size: 0.9rem;
+    }
+
+    .box {
+        width: 20rem;
+    }
+
+    .form-check-input {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        border-radius: 5rem !important;
+    }
+    
+    h2.carousel-title {
+    	font-weight: 700 !important;
+    	font-size: 1.5rem !important;
+    }
+
+
+
+	.nomeCompl, .nomeModal, .nomeModalPed {
+    font-size: 1rem;
+}
+    
+    .tag {
+        width: 4.5rem;
+    }
+    
+    .container-card {
+    	margin-top: 0.9rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+
+    .vertical-card {
+        height: 20rem; /* Altura fixa para os cards verticais */
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+
+    .left-cards, .right-card {
+        width: 85%;
+    }
+
+    .vertical-card, .horizontal-card {
+        margin-bottom: 1rem;
+        height: 20rem; /* Altura fixa para os cards em dispositivos móveis */
+        overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
+    }
+    
+    .modal-content {
+    }
+    
+    .produtosVendidos {
+    	margin-top: 1rem !important;
+    }
+    
+    .produtosVendidos h5 {
+    	padding-top: 2rem !important;
+    }
+    
+
+    .horizontal-card {
+        height: 20rem; /* Altura fixa para o card horizontal também */
+    }
+
+    /* Título responsivo */
+    .cards-title {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container-consulta {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .foto {
+        width: 4.5rem;
+        margin-right: 0rem;
+    }
+    
+    .tag {
+        width: 4.5rem;
+    }
+
+    .nometag {
+        font-size: 0.7rem;
+    }
+
+    .vertical-card {
+        height: 22rem; /* Altura fixa para os cards verticais */
+    }
+    
+    .left-cards, .right-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .cards-title {
+        font-size: 1.5rem;
+        width: 35rem;
+    }
+    
+    .left-cards {
+    	width: 100%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+
+    
+    .tag {
+        width: 4.5rem;
+    }
+    
+    .nometag {
+        font-size: 0.7rem;
+    }
+
+    .vertical-card {
+        height: 24rem; /* Altura fixa para os cards verticais */
+    }
+    
+    .left-cards {
+	    display: flex !important;
+	    flex-direction: column !important;
+	    width: 32rem;
+	    border-radius: 10px;
+	}
+	
+	.box {
+		width: 19rem;
+	}
+	
+	.swiper {
+	    width: 95%;
+	    height: 100%;
+	    padding: 1rem !important;
+	}
+
+
+	.swiper-button-prev {
+		margin-left: 0rem !important;
+	}
+	
+	.swiper-button-next {
+		margin-right: 0rem !important;
+	}
+	
+	.div-consulta {
+    text-align: left;
+    margin-left: 2rem;
+}
+}
